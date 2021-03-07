@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>CEN-4025C-Module-7</display-name>
+	<servlet>
+		<display-name>listData</display-name>
+		<servlet-name>listData</servlet-name>
+		<servlet-class>Module_7.serverControl</servlet-class>
+	</servlet>
+	<servlet>
+		<display-name>addData</display-name>
+		<servlet-name>addData</servlet-name>
+		<servlet-class>Module_7.servletInsert</servlet-class>
+	</servlet>
+	<servlet>
+		<display-name>deleteData</display-name>
+		<servlet-name>deleteData</servlet-name>
+		<servlet-class>Module_7.servletDelete</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>listData</servlet-name>
+		<url-pattern>/listData</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>addData</servlet-name>
+		<url-pattern>/addData</url-pattern>
+	</servlet-mapping>
+		<servlet-mapping>
+		<servlet-name>deleteData</servlet-name>
+		<url-pattern>/listView</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>deleteData</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>Index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
